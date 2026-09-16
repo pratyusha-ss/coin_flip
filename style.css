@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #dce8f2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    color: #34495e;
+}
+
+.coin-game {
+    width: 400px;
+
+    padding: 35px;
+
+    background: white;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px #b8c7d3;
+}
+
+h1 {
+    color: #527a9b;
+
+    font-size: 40px;
+}
+
+#coin {
+    font-size: 90px;
+
+    margin: 25px;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 6px 0;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #c5dbea;
+
+    color: #34495e;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #aec9dd;
+}
+
+#result {
+    margin-top: 25px;
+}
+
+#score {
+    font-weight: bold;
+}

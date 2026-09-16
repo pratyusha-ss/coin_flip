@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coin Flip 🪙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="coin-game">
+
+        <h1>🪙 Coin Flip</h1>
+
+        <p>Pick heads or tails and see what you get!</p>
+
+        <div id="coin">🪙</div>
+
+        <button onclick="flipCoin('Heads')">
+            Heads
+        </button>
+
+        <button onclick="flipCoin('Tails')">
+            Tails
+        </button>
+
+        <h2 id="result">Make your choice!</h2>
+
+        <p id="score">⭐ Score: 0</p>
+
+        <button onclick="restart()">
+            🔄 Restart
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
