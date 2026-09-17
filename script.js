@@ -1,54 +1,35 @@
 let score = 0;
 
-
-function flipCoin(choice) {
+function flipCoin(guess) {
 
     let number = Math.floor(Math.random() * 2);
 
     let result;
 
-    if (number == 0) {
-
+    if (number === 0) {
         result = "Heads";
-
     } else {
-
         result = "Tails";
-
     }
 
+    document.getElementById("result").textContent =
+        "The coin landed on " + result + "!";
 
-    if (choice == result) {
-
-        score = score + 1;
-
-        document.getElementById("result").innerText =
-            "🎉 You got it right!";
-
+    if (guess === result) {
+        score++;
+        document.getElementById("result").textContent =
+            "Correct! It was " + result + "!";
     } else {
-
-        document.getElementById("result").innerText =
-            "😅 Not this time! It was " + result;
-
+        document.getElementById("result").textContent =
+            "Wrong! It was " + result + ".";
     }
 
-
-    document.getElementById("coin").innerText = "🪙";
-
-    document.getElementById("score").innerText =
-        "⭐ Score: " + score;
+    document.getElementById("score").textContent = score;
 }
 
-
-function restart() {
-
+function resetGame() {
     score = 0;
 
-    document.getElementById("coin").innerText = "🪙";
-
-    document.getElementById("result").innerText =
-        "Make your choice!";
-
-    document.getElementById("score").innerText =
-        "⭐ Score: 0";
+    document.getElementById("score").textContent = score;
+    document.getElementById("result").textContent = "Make your guess";
 }
